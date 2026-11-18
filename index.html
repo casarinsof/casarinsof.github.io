@@ -2,86 +2,327 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sofia Casarin - Personal Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sofia Casarin – Applied Research Scientist | Computer Vision, Efficient AI, Multimodal Models</title>
+  <meta name="description" content="Sofia Casarin is an Applied Research Scientist working on computer vision, efficient AI and multimodal models. Ph.D. in Computer Science (summa cum laude), with publications at CVPR and ICLR.">
+  <meta name="author" content="Sofia Casarin">
+  <meta name="theme-color" content="#f6f3ee" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#14161c" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://casarinsof.github.io/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sofia Casarin – Applied Research Scientist">
+  <meta property="og:description" content="Computer vision, efficient AI and multimodal models. Ph.D. in Computer Science (summa cum laude); publications at CVPR and ICLR.">
+  <meta property="og:url" content="https://casarinsof.github.io/">
+  <meta property="og:image" content="https://casarinsof.github.io/profile.jpg">
+  <meta property="og:image:alt" content="Portrait of Sofia Casarin">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <style>
-    /* Add your custom CSS styles here */
-    body {
-      background-image: url('background_(1).jpg');
-      background-size: cover;
-      font-family: Arial, sans-serif;
-      color: #333;
-    }
-    /* Add more styles as needed */
-  </style>
 </head>
 <body>
-  <!-- Navigation bar -->
-  <nav>
-    <div class="container">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#achievements">Achievements</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#education">Education</a></li>
-      </ul>
-    </div>
-  </nav>
+  <a class="skip" href="#main">Skip to content</a>
 
-  <!-- Header section -->
-  <header>
-    <div class="container">
-      <img src="profile-pic.jpg" alt="Sofia Casarin">
-      <h1>Sofia Casarin</h1>
-      <p>Introduction or tagline about yourself.</p>
+  <header class="nav" id="top">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top">Sofia Casarin</a>
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#more">More</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <!-- Main content -->
-  <main>
-    <!-- Publications Section -->
-    <section id="publications" class="content-section">
-      <div class="container">
-        <h2>Publications</h2>
-        <ul>
-          <li><a href="link-to-publication-1">Publication Title 1</a></li>
-          <li><a href="link-to-publication-2">Publication Title 2</a></li>
-          <!-- Add more publications as needed -->
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <img class="portrait" src="profile.jpg" width="320" height="320" alt="Sofia Casarin smiling, wearing a burgundy beanie in a mountain landscape">
+        <div class="hero-text">
+          <p class="eyebrow">Rome, Italy</p>
+          <h1>Sofia Casarin</h1>
+          <p class="role">Applied Research Scientist <span aria-hidden="true">·</span> Computer Vision <span aria-hidden="true">·</span> Efficient AI <span aria-hidden="true">·</span> Multimodal Models</p>
+          <p class="bio">I have a Ph.D. in Computer Science (summa cum laude), 5 years of research experience in deep learning, computer vision and neural architecture search, and 2.5 years of professional experience in AI engineering. I develop and evaluate efficient architectures for image and video understanding, run experiments on HPC infrastructure, and turn research into practical AI systems. I also teach deep learning and mentor Ph.D. researchers.</p>
+          <ul class="buttons">
+            <li><a class="btn primary" href="cv.pdf">Download CV</a></li>
+            <li><a class="btn" href="mailto:sofia.casarin1997@gmail.com">Email</a></li>
+            <li><a class="btn" href="https://scholar.google.com/citations?user=3k4frA0AAAAJ" rel="me noopener">Google Scholar</a></li>
+            <li><a class="btn" href="https://github.com/casarinsof" rel="me noopener">GitHub</a></li>
+            <li><a class="btn" href="https://www.linkedin.com/in/sofia-casarin" rel="me noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWS -->
+    <section class="news" aria-labelledby="news-h">
+      <div class="wrap">
+        <h2 id="news-h" class="sr-only">Highlights</h2>
+        <ul class="news-list">
+          <li><span class="tag">2026</span> Ph.D. in Computer Science completed, summa cum laude, at the Free University of Bozen-Bolzano.</li>
+          <li><span class="tag">2026</span> Paper at ICLR 2026: <em>Action-guided attention for video action anticipation</em>.</li>
+          <li><span class="tag">2025</span> Paper at CVPR 2025: <em>L-SWAG</em>, zero-shot NAS on Vision Transformers.</li>
+          <li><span class="tag">2025</span> Joined as Applied AI Engineer, working on multi-agent systems and multimodal RAG.</li>
         </ul>
       </div>
     </section>
 
-    <!-- Achievements Section -->
-    <section id="achievements" class="content-section">
-      <div class="container">
-        <h2>Achievements</h2>
-        <p>Add information about your achievements here.</p>
+    <!-- RESEARCH -->
+    <section id="research" class="section">
+      <div class="wrap">
+        <h2>Research highlights</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Neural Architecture Search</h3>
+            <p>Designed novel zero-cost metrics and predictor-based NAS algorithms for robust architecture optimization under distribution shifts, for image and video tasks.</p>
+          </article>
+          <article class="card">
+            <h3>Video Understanding</h3>
+            <p>Developed differentiable augmentation techniques for transferring image representations to video recognition.</p>
+          </article>
+          <article class="card">
+            <h3>Medical Imaging</h3>
+            <p>Designed SSH-UNet, a lightweight architecture for volumetric CT segmentation that outperforms multiple state-of-the-art methods with significantly fewer parameters.</p>
+          </article>
+          <article class="card">
+            <h3>Industrial AI</h3>
+            <p>Designed enterprise AI assistants based on agentic AI and multimodal document understanding for industrial knowledge management.</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="content-section">
-      <div class="container">
-        <h2>Projects</h2>
-        <p>Add information about your projects here.</p>
+    <!-- PUBLICATIONS -->
+    <section id="publications" class="section alt">
+      <div class="wrap">
+        <h2>Publications</h2>
+        <h3 class="sub">Selected</h3>
+        <ol class="pubs featured">
+          <li class="pub" data-paper="lswag-cvpr2025" id="lswag-cvpr2025">
+            <span class="venue">CVPR 2025</span>
+            <h4>L-SWAG: Layer-Sample Wise Activation with Gradients Information for Zero-Shot NAS on Vision Transformers</h4>
+            <p class="authors"><strong>S. Casarin</strong>, S. Escalera, O. Lanz</p>
+            <div class="paper-links"><a data-link="paper" href="https://openaccess.thecvf.com/content/CVPR2025/html/Casarin_L-SWAG_Layer-Sample_Wise_Activation_with_Gradients_Information_for_Zero-Shot_NAS_CVPR_2025_paper.html" rel="noopener">Paper</a> <a data-link="pdf" href="https://openaccess.thecvf.com/content/CVPR2025/papers/Casarin_L-SWAG_Layer-Sample_Wise_Activation_with_Gradients_Information_for_Zero-Shot_NAS_CVPR_2025_paper.pdf" rel="noopener">PDF</a></div>
+          </li>
+          <li class="pub" data-paper="image-is-my-video-cvpr2024" id="image-is-my-video-cvpr2024">
+            <span class="venue">CVPR 2024</span>
+            <h4>Your Image is My Video: Reshaping the Receptive Field via Image-to-Video Differentiable AutoAugmentation and Fusion</h4>
+            <p class="authors"><strong>S. Casarin</strong>, C. I. Ugwu, S. Escalera, O. Lanz</p>
+            <div class="paper-links"><a data-link="paper" href="https://openaccess.thecvf.com/content/CVPR2024/html/Casarin_Your_Image_is_My_Video_Reshaping_the_Receptive_Field_via_CVPR_2024_paper.html" rel="noopener">Paper</a> <a data-link="pdf" href="https://openaccess.thecvf.com/content/CVPR2024/papers/Casarin_Your_Image_is_My_Video_Reshaping_the_Receptive_Field_via_CVPR_2024_paper.pdf" rel="noopener">PDF</a></div>
+          </li>
+          <li class="pub" data-paper="action-guided-attention-iclr2026" id="action-guided-attention-iclr2026">
+            <span class="venue">ICLR 2026</span>
+            <h4>Action-Guided Attention for Video Action Anticipation</h4>
+            <p class="authors">T. M. Tai, <strong>S. Casarin</strong>, A. Pilzer, W. Nutt, O. Lanz</p>
+            <div class="paper-links"><a data-link="openreview" href="https://openreview.net/forum?id=uKFVZMPppq" rel="noopener">OpenReview</a> <a data-link="arxiv" href="https://arxiv.org/abs/2603.01743" rel="noopener">arXiv</a></div>
+          </li>
+          <li class="pub" data-paper="nas-just-once-iccvw2025" id="nas-just-once-iccvw2025">
+            <span class="venue">ICCV Workshops 2025</span>
+            <h4>NAS Just Once: Neural Architecture Search for Joint Image-Video Recognition</h4>
+            <p class="authors"><strong>S. Casarin</strong>, S. Escalera, O. Lanz</p>
+            <div class="paper-links"><a data-link="paper" href="https://openaccess.thecvf.com/content/ICCV2025W/Findings/html/Casarin_NAS_just_once_Neural_Architecture_Search_for_joint_Image-Video_Recognition_ICCVW_2025_paper.html" rel="noopener">Paper</a> <a data-link="pdf" href="https://openaccess.thecvf.com/content/ICCV2025W/Findings/papers/Casarin_NAS_just_once_Neural_Architecture_Search_for_joint_Image-Video_Recognition_ICCVW_2025_paper.pdf" rel="noopener">PDF</a></div>
+          </li>
+        </ol>
+
+        <h3 class="sub">More publications</h3>
+        <ul class="pubs list">
+          <li class="pub" data-paper="grasp-gcn-cvprw2024">
+            <p><span class="venue">NAS Workshop, CVPR 2024</span> <strong>S. Casarin</strong>, O. Lanz, S. Escalera. <span class="title">“GRASP-GCN: Graph-Shape Prioritization for Neural Architecture Search under Distribution Shifts.”</span></p>
+            <div class="paper-links"><a data-link="paper" href="https://openaccess.thecvf.com/content/CVPR2024W/CVPR-NAS/html/Casarin_GRASP-GCN_Graph-Shape_Prioritization_for_Neural_Architecture_Search_Under_Distribution_Shifts_CVPRW_2024_paper.html" rel="noopener">Paper</a> <a data-link="pdf" href="https://openaccess.thecvf.com/content/CVPR2024W/CVPR-NAS/papers/Casarin_GRASP-GCN_Graph-Shape_Prioritization_for_Neural_Architecture_Search_Under_Distribution_Shifts_CVPRW_2024_paper.pdf" rel="noopener">PDF</a></div>
+          </li>
+          <li class="pub" data-paper="fractals-anomaly-cvprw2024">
+            <p><span class="venue">Workshop on Fair, Data-efficient, and Trusted Computer Vision, CVPR 2024</span> C. I. Ugwu, <strong>S. Casarin</strong>, O. Lanz. <span class="title">“Fractals as Pre-training Datasets for Anomaly Detection and Localization.”</span></p>
+            <div class="paper-links"><a data-link="paper" href="https://openaccess.thecvf.com/content/CVPR2024W/TCV2024/html/Ugwu_Fractals_as_Pre-training_Datasets_for_Anomaly_Detection_and_Localization_CVPRW_2024_paper.html" rel="noopener">Paper</a> <a data-link="pdf" href="https://openaccess.thecvf.com/content/CVPR2024W/TCV2024/papers/Ugwu_Fractals_as_Pre-training_Datasets_for_Anomaly_Detection_and_Localization_CVPRW_2024_paper.pdf" rel="noopener">PDF</a> <a data-link="arxiv" href="https://arxiv.org/abs/2405.06980" rel="noopener">arXiv</a></div>
+          </li>
+          <li class="pub" data-paper="ddnas-bench-icmva2024">
+            <p><span class="venue">ICMVA 2024</span> <strong>S. Casarin</strong>, C. Ugwu. <span class="title">“DDS-NAS-Bench: Towards Predictors under Data Distribution Shift.”</span></p>
+          </li>
+          <li class="pub" data-paper="slice-shift-unet-icmva2024">
+            <p><span class="venue">ICMVA 2024</span> C. I. Ugwu, <strong>S. Casarin</strong>, O. Lanz. <span class="title">“Spatiotemporal Modeling Encounters 3D Medical Image Analysis: Slice-Shift UNet with Multi-View Fusion.”</span></p>
+            <div class="paper-links"><a data-link="arxiv" href="https://arxiv.org/abs/2307.12853" rel="noopener">arXiv</a></div>
+          </li>
+          <li class="pub" data-paper="visual-inspection-isiea2024">
+            <p><span class="venue">International Symposium on Industrial Engineering and Automation 2024</span> E. Caruso, <strong>S. Casarin</strong>, T. Pfund, F. Schupp, O. Lanz. <span class="title">“Automated Visual Inspection via Differentiable Physically-Based Rendering Under Unknown Ambient Illumination.”</span></p>
+          </li>
+          <li class="pub" data-paper="measles-twitter-ecmlpkdd">
+            <p><span class="venue">Workshop on Data Analysis in Life Science, ECML PKDD 2022</span> C. I. Ugwu, <strong>S. Casarin</strong>. <span class="title">“Italian Debate on Measles Vaccination: How Twitter Data Highlight Communities and Polarity.”</span></p>
+          </li>
+          <li class="pub" data-paper="network-anomaly-sds2022">
+            <p><span class="venue">Swiss Conference on Data Science (SDS) 2022</span> <strong>S. Casarin</strong>, S. Baldoni, M. Carli, P. Zanuttigh, F. Battisti. <span class="title">“Unsupervised Network Anomaly Detection by Learning on 2D Data Representations.”</span></p>
+          </li>
+        </ul>
       </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="content-section">
-      <div class="container">
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="wrap">
+        <h2>Experience</h2>
+        <ol class="timeline">
+          <li>
+            <div class="when">March 2025 – Present</div>
+            <div class="what">
+              <h3>Applied AI Engineer <span class="org">· Enel</span></h3>
+              <p class="place">Division of Language and Vision Machine Learning, Rome</p>
+              <ul>
+                <li>Developed production-ready multi-agent AI systems and multimodal RAG pipelines for enterprise knowledge management, processing 10,000+ documents.</li>
+                <li>Designed a quantitative evaluation framework to benchmark retrieval configurations and assess system quality using Precision@k, Recall@k, MRR and NDCG.</li>
+                <li>Built multilingual GenAI applications for document understanding, automated KPI extraction, validation and anomaly detection.</li>
+                <li>Deployed cloud-native AI services on AWS using serverless and containerized architectures.</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="when">Dec. 2021 – Nov. 2022</div>
+            <div class="what">
+              <h3>Research Fellow <span class="org">· University of Padua</span></h3>
+              <p class="place">Department of Information Engineering (DEI)</p>
+              <p>Implementation, optimization and testing of an unsupervised anomaly detection system. The algorithm was tailored to the 2D representation of real traffic data and optimized for the final goal of detecting malicious events.</p>
+              <p class="outcome"><strong>Outcome:</strong> publication at the 9th Swiss Conference on Data Science (SDS), 2022.</p>
+            </div>
+          </li>
+          <li>
+            <div class="when">Mar. 2021 – Sep. 2021</div>
+            <div class="what">
+              <h3>Research Intern <span class="org">· Sony</span></h3>
+              <p class="place">Sony Europe B.V. Zweigniederlassung, Stuttgart, Germany</p>
+              <ul>
+                <li>Investigated predictor transferability in Neural Architecture Search under distribution shifts, designing a cross-dataset benchmark to evaluate generalization across data distributions.</li>
+                <li>Proposed few-shot predictor fine-tuning strategies that improved NAS performance with minimal additional architecture evaluations.</li>
+                <li>Designed and evaluated learning methods through controlled experiments, quantitative benchmarking and systematic comparison across datasets.</li>
+              </ul>
+              <p class="outcome"><strong>Outcome:</strong> publications at the International Conference on Machine Vision Applications (ICMVA) and at the NAS workshop at CVPR, and an oral presentation at the DMLR workshop at ICLR.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section alt">
+      <div class="wrap">
         <h2>Education</h2>
-        <p>Add information about your education here.</p>
+        <ol class="timeline">
+          <li>
+            <div class="when">2022 – 2026</div>
+            <div class="what">
+              <h3>Ph.D. in Computer Science <span class="org">· Free University of Bozen-Bolzano</span></h3>
+              <p class="place">Graduated summa cum laude</p>
+              <p class="thesis"><strong>Thesis:</strong> <em>“Designing Task-Aware and Domain-Adaptive Neural Architectures: From Neural Architecture Search to Structural Modeling Across Shift Constraints and Modalities.”</em></p>
+              <ul class="chips" aria-label="Research areas">
+                <li>Neural Architecture Search</li>
+                <li>Computer Vision</li>
+                <li>Video Understanding</li>
+                <li>Domain Adaptation</li>
+                <li>Vision-Language Models</li>
+                <li>Medical Imaging</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="when">2019 – 2021</div>
+            <div class="what">
+              <h3>M.Sc. Telecommunications Engineering <span class="org">· University of Padua</span></h3>
+              <p class="place">Department of Information Engineering (DEI) · Graduated summa cum laude</p>
+              <p class="thesis"><strong>Thesis, in collaboration with Sony:</strong> <em>“Predictor-based Neural Architecture Search under Data Distribution Shift.”</em></p>
+              <p>Developed a cross-dataset NAS benchmark with architectures trained on four datasets and investigated predictor transferability under distribution shifts. Proposed few-shot predictor fine-tuning strategies that improve NAS performance with minimal additional architecture evaluations.</p>
+              <p class="place">Supervisor: Pietro Zanuttigh · Co-supervisor: Lukas Mauch</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="wrap">
+        <h2>Projects</h2>
+        <div class="projects">
+          <article class="project">
+            <p class="kicker">Competition · 1st place on 10 of 11 datasets</p>
+            <h3>CVPR NAS Challenge 2023</h3>
+            <ul>
+              <li>Developed and benchmarked predictor-based, evolutionary and generative Neural Architecture Search methods under a strict 24-hour computational budget.</li>
+              <li>Built automated ML pipelines integrating data processing, architecture optimization, model training and evaluation.</li>
+              <li>Achieved 1st place on 10 out of 11 datasets, showing strong experimental design and computationally efficient model optimization.</li>
+            </ul>
+            <p class="skills">ML automation · End-to-end pipelines · Optimization · Computational efficiency · Benchmarking · Large-scale experimentation</p>
+          </article>
+          <article class="project">
+            <p class="kicker">Medical imaging · 6M parameters</p>
+            <h3>Volumetric Medical Image Segmentation (SSH-UNet)</h3>
+            <p>Designed a parameter-efficient deep learning architecture for volumetric CT segmentation, replacing computationally expensive 3D convolutions with a multi-plane 2D CNN enhanced with Temporal Shift Modules (TSM).</p>
+            <p><strong>Impact:</strong> performance superior to 5 of 6 state-of-the-art models with only 6M parameters, compared with 31M–150M for competing approaches.</p>
+            <p class="skills">Deep learning · Model optimization · Efficient AI · Computer vision · PyTorch · Architecture design · Resource-aware ML</p>
+          </article>
+          <article class="project">
+            <p class="kicker">HPC · CINECA</p>
+            <h3>ISCRA-C: CINECA Computational Grant</h3>
+            <p>Proposed and secured access to CINECA HPC infrastructure to develop and evaluate NAS methods for video action recognition, designing experiments to efficiently explore large architecture search spaces.</p>
+            <p><strong>Impact:</strong> investigated proxy metrics to estimate architecture quality without fully training candidate models, targeting substantial reductions in the cost of large-scale architecture evaluation.</p>
+            <p class="skills">HPC · Distributed experimentation · Computational optimization · Proxy metrics · ML experimentation · Computer vision · Scalable AI</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- MORE -->
+    <section id="more" class="section alt">
+      <div class="wrap more-grid">
+        <div>
+          <h2>Achievements</h2>
+          <ul class="plain">
+            <li><strong>Winner</strong>, CVPR NAS Challenge 2023 (1st place on 10 of 11 datasets)</li>
+            <li><strong>Winner</strong>, Huawei Digital Talent Summit</li>
+            <li><strong>Reviewer</strong> for CVPR, ICLR and BMVC</li>
+            <li><strong>ISCRA-C</strong> CINECA computational grant</li>
+            <li><strong>Teaching Assistant</strong>, Operating Systems and Deep Learning</li>
+          </ul>
+
+          <h2 class="gap">Teaching &amp; mentoring</h2>
+          <ul class="plain">
+            <li><strong>Teaching:</strong> delivered teaching activities in Deep Learning during the Ph.D., supporting students in understanding deep learning concepts and methods.</li>
+            <li><strong>Research mentoring:</strong> guided and supported other Ph.D. researchers, including experimental design, implementation and evaluation of deep learning methods.</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Skills</h2>
+          <dl class="skills-list">
+            <dt>Deep learning &amp; computer vision</dt>
+            <dd>PyTorch, neural architecture search, efficient deep learning, image and video recognition, medical image segmentation, model compression</dd>
+            <dt>Multimodal AI</dt>
+            <dd>Image-to-video architecture search, multimodal document understanding, text-image-table processing</dd>
+            <dt>NLP &amp; generative AI</dt>
+            <dd>LLM-based applications, RAG, multi-agent systems, evaluation frameworks, diffusion models, LlamaIndex, LangChain, Amazon Bedrock</dd>
+            <dt>Cloud &amp; deployment</dt>
+            <dd>AWS, Lambda, Docker, serverless architectures, containerized AI services</dd>
+            <dt>Research &amp; infrastructure</dt>
+            <dd>HPC, CINECA computing resources, large-scale experimentation, model evaluation, data processing</dd>
+            <dt>Programming</dt>
+            <dd>Python, PyTorch, Matlab</dd>
+            <dt>Languages</dt>
+            <dd>Italian (native), English (C1), German (A1)</dd>
+          </dl>
+        </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer section -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2023 Sofia Casarin. All rights reserved.</p>
+  <footer class="footer">
+    <div class="wrap">
+      <p>© 2026 Sofia Casarin</p>
+      <p><a href="#top">Back to top ↑</a></p>
     </div>
   </footer>
 </body>
